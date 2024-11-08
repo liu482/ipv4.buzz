@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="个人主页 - 简约设计">
+    <title>个人主页</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f7f7f7;
+            color: #333;
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh; /* 保证页面高度至少为视口高度 */
+        }
+
+        header {
+            background-color: #ff6f61;
+            width: 100%;
+            padding: 40px 0;
+            color: white;
+            text-align: center;
+        }
+
+        header .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header .avatar img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+
+        header .intro h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        header .intro p {
+            font-size: 1.1rem;
+            color: #f1f1f1;
+        }
+
+        main {
+            padding: 40px 20px;
+            width: 100%;
+            max-width: 900px;
+            background-color: white;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            margin-top: -50px;
+            border-radius: 10px;
+            flex-grow: 1; /* 使主内容区域能够推到页面底部 */
+        }
+
+        main section {
+            margin-bottom: 40px;
+        }
+
+        main h2 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        main p {
+            font-size: 1.1rem;
+            color: #555;
+        }
+
+        main .contact ul {
+            list-style-type: none;
+            margin-top: 10px;
+        }
+
+        main .contact li {
+            margin-bottom: 10px;
+        }
+
+        main .contact a {
+            text-decoration: none;
+            color: #ff6f61;
+            font-size: 1.2rem;
+            transition: 0.3s;
+        }
+
+        main .contact a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            background-color: transparent; /* 设置为透明 */
+            color: white;
+            width: 100%;
+            text-align: center;
+            padding: 10px;
+            mix-blend-mode: difference; /* 设置字体根据背景色自动变色 */
+            margin-top: auto; /* 将footer推到页面底部 */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="avatar">
+                <img src="https://i0.img2ipfs.com/ipfs/QmYHV2VG7aTDn3Wbn4UMtmJeBnEtbPck4CU5SWVPGN41WF?filename=Image_1730566869997.gif" alt="头像">
+            </div>
+            <div class="intro">
+                <h1>喃娘👑</h1>
+                <p>欢迎来到我的个人主页！</p>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="about">
+            <h2>关于我</h2>
+            <p>没什么好关于的</p>
+        </section>
+
+        <section class="contact">
+            <h2>联系方式</h2>
+            <ul>
+                <li><a href="mailto:520@mail.sb">Mail</a></li>
+                <li><a href="http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=0bmsfaFLMEuwQYofrklOZzdcaQ20ASpD&authKey=6J32BKu4clIlO2%2BoA4Y4RTxA2CxvwSegranTCatzAXFkzo6Ba2brHGE7%2BPuVppaC&noverify=0&group_code=955733920" target="_blank">无聊的QQ群</a></li>
+                    </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 喃娘 | 520#mail.sb.</p>
+    </footer>
+</body>
+</html>
